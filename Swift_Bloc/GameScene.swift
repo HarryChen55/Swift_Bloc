@@ -150,8 +150,8 @@ class GameScene: SKScene {
             }
         }
         
-        for (rowIdx, row) in linesToRemove.enumerate() {
-            for (blockIdx, block) in row.enumerate() {
+        for (_, row) in linesToRemove.enumerate() {
+            for (_, block) in row.enumerate() {
                 let randomRadius = CGFloat(UInt(arc4random_uniform(400) + 100))
                 let goLeft = arc4random_uniform(100) % 2 == 0
                 
