@@ -1,3 +1,3 @@
 # Swift_Bloc
 A Tetris Game written in Swift Code.
-Work on iPhone4(iOS7.1)
+Works well on iPhone4(iOS7.1)
