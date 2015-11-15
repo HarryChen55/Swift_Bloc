@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A2F1F9D1BF84F8600CE2638 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F1F9C1BF84F8600CE2638 /* SquareShape.swift */; };
+		4A2F1F9F1BF84FCF00CE2638 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F1F9E1BF84FCF00CE2638 /* TShape.swift */; };
+		4A2F1FA11BF84FDA00CE2638 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F1FA01BF84FDA00CE2638 /* LineShape.swift */; };
+		4A2F1FA31BF84FE600CE2638 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F1FA21BF84FE600CE2638 /* SShape.swift */; };
+		4A2F1FA51BF84FEF00CE2638 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F1FA41BF84FEF00CE2638 /* ZShape.swift */; };
+		4A2F1FA71BF84FF800CE2638 /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F1FA61BF84FF800CE2638 /* LShape.swift */; };
+		4A2F1FA91BF8500A00CE2638 /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F1FA81BF8500A00CE2638 /* JShape.swift */; };
+		4A2F1FAB1BF8511500CE2638 /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F1FAA1BF8511500CE2638 /* Swiftris.swift */; };
+		4AE2A4AC1BF8458800D7D4D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2A4AB1BF8458800D7D4D2 /* AppDelegate.swift */; };
+		4AE2A4B01BF8458B00D7D4D2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2A4AF1BF8458B00D7D4D2 /* GameScene.swift */; };
+		4AE2A4B21BF8458B00D7D4D2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2A4B11BF8458B00D7D4D2 /* GameViewController.swift */; };
+		4AE2A4B51BF8458B00D7D4D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4B31BF8458B00D7D4D2 /* Main.storyboard */; };
+		4AE2A4B71BF8458B00D7D4D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4B61BF8458B00D7D4D2 /* Assets.xcassets */; };
+		4AE2A4C51BF8458C00D7D4D2 /* Swift_BlocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2A4C41BF8458C00D7D4D2 /* Swift_BlocTests.swift */; };
+		4AE2A4D61BF8492B00D7D4D2 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4D11BF8492B00D7D4D2 /* bomb.mp3 */; };
+		4AE2A4D71BF8492B00D7D4D2 /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4D21BF8492B00D7D4D2 /* drop.mp3 */; };
+		4AE2A4D81BF8492B00D7D4D2 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4D31BF8492B00D7D4D2 /* gameover.mp3 */; };
+		4AE2A4D91BF8492B00D7D4D2 /* levelup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4D41BF8492B00D7D4D2 /* levelup.mp3 */; };
+		4AE2A4DA1BF8492B00D7D4D2 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4D51BF8492B00D7D4D2 /* theme.mp3 */; };
+		4AE2A4DC1BF8494900D7D4D2 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4DB1BF8494900D7D4D2 /* Sprites.atlas */; };
+		4AE2A4E51BF8498300D7D4D2 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4DD1BF8498300D7D4D2 /* background.png */; };
+		4AE2A4E61BF8498300D7D4D2 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4DE1BF8498300D7D4D2 /* background@2x.png */; };
+		4AE2A4E71BF8498300D7D4D2 /* gameboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4DF1BF8498300D7D4D2 /* gameboard.png */; };
+		4AE2A4E81BF8498300D7D4D2 /* gameboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4E01BF8498300D7D4D2 /* gameboard@2x.png */; };
+		4AE2A4E91BF8498300D7D4D2 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4E11BF8498300D7D4D2 /* LaunchImage.png */; };
+		4AE2A4EA1BF8498300D7D4D2 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4E21BF8498300D7D4D2 /* LaunchImage@2x.png */; };
+		4AE2A4EB1BF8498300D7D4D2 /* whitebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4E31BF8498300D7D4D2 /* whitebg.png */; };
+		4AE2A4EC1BF8498300D7D4D2 /* whitebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4E41BF8498300D7D4D2 /* whitebg@2x.png */; };
+		4AE2A4F61BF84A7200D7D4D2 /* icon-29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4F31BF84A7200D7D4D2 /* icon-29pt.png */; };
+		4AE2A4F71BF84A7200D7D4D2 /* icon-40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4F41BF84A7200D7D4D2 /* icon-40pt.png */; };
+		4AE2A4F81BF84A7200D7D4D2 /* icon-60pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4F51BF84A7200D7D4D2 /* icon-60pt.png */; };
+		4AE2A4FC1BF84B1100D7D4D2 /* icon-29s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4F91BF84B1100D7D4D2 /* icon-29s.png */; };
+		4AE2A4FD1BF84B1100D7D4D2 /* icon-40s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4FA1BF84B1100D7D4D2 /* icon-40s.png */; };
+		4AE2A4FE1BF84B1100D7D4D2 /* icon-60s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2A4FB1BF84B1100D7D4D2 /* icon-60s.png */; };
+		4AE2A5001BF84C9900D7D4D2 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2A4FF1BF84C9900D7D4D2 /* Array2D.swift */; };
+		4AE2A5021BF84D7900D7D4D2 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2A5011BF84D7900D7D4D2 /* Block.swift */; };
+		4AE2A5041BF84E3200D7D4D2 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2A5031BF84E3200D7D4D2 /* Shape.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AE2A4C11BF8458B00D7D4D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AE2A4A01BF8458800D7D4D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE2A4A71BF8458800D7D4D2;
+			remoteInfo = Swift_Bloc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A2F1F9C1BF84F8600CE2638 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
+		4A2F1F9E1BF84FCF00CE2638 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
+		4A2F1FA01BF84FDA00CE2638 /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
+		4A2F1FA21BF84FE600CE2638 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
+		4A2F1FA41BF84FEF00CE2638 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
+		4A2F1FA61BF84FF800CE2638 /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
+		4A2F1FA81BF8500A00CE2638 /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
+		4A2F1FAA1BF8511500CE2638 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
+		4AE2A4A81BF8458800D7D4D2 /* Swift_Bloc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_Bloc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE2A4AB1BF8458800D7D4D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AE2A4AF1BF8458B00D7D4D2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4AE2A4B11BF8458B00D7D4D2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4AE2A4B41BF8458B00D7D4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AE2A4B61BF8458B00D7D4D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AE2A4C01BF8458B00D7D4D2 /* Swift_BlocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_BlocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE2A4C41BF8458C00D7D4D2 /* Swift_BlocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_BlocTests.swift; sourceTree = "<group>"; };
+		4AE2A4C61BF8458C00D7D4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE2A4D11BF8492B00D7D4D2 /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		4AE2A4D21BF8492B00D7D4D2 /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drop.mp3; sourceTree = "<group>"; };
+		4AE2A4D31BF8492B00D7D4D2 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		4AE2A4D41BF8492B00D7D4D2 /* levelup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelup.mp3; sourceTree = "<group>"; };
+		4AE2A4D51BF8492B00D7D4D2 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theme.mp3; sourceTree = "<group>"; };
+		4AE2A4DB1BF8494900D7D4D2 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		4AE2A4DD1BF8498300D7D4D2 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		4AE2A4DE1BF8498300D7D4D2 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		4AE2A4DF1BF8498300D7D4D2 /* gameboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameboard.png; sourceTree = "<group>"; };
+		4AE2A4E01BF8498300D7D4D2 /* gameboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gameboard@2x.png"; sourceTree = "<group>"; };
+		4AE2A4E11BF8498300D7D4D2 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		4AE2A4E21BF8498300D7D4D2 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		4AE2A4E31BF8498300D7D4D2 /* whitebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitebg.png; sourceTree = "<group>"; };
+		4AE2A4E41BF8498300D7D4D2 /* whitebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whitebg@2x.png"; sourceTree = "<group>"; };
+		4AE2A4F31BF84A7200D7D4D2 /* icon-29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29pt.png"; sourceTree = "<group>"; };
+		4AE2A4F41BF84A7200D7D4D2 /* icon-40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40pt.png"; sourceTree = "<group>"; };
+		4AE2A4F51BF84A7200D7D4D2 /* icon-60pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60pt.png"; sourceTree = "<group>"; };
+		4AE2A4F91BF84B1100D7D4D2 /* icon-29s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29s.png"; sourceTree = "<group>"; };
+		4AE2A4FA1BF84B1100D7D4D2 /* icon-40s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40s.png"; sourceTree = "<group>"; };
+		4AE2A4FB1BF84B1100D7D4D2 /* icon-60s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60s.png"; sourceTree = "<group>"; };
+		4AE2A4FF1BF84C9900D7D4D2 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		4AE2A5011BF84D7900D7D4D2 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		4AE2A5031BF84E3200D7D4D2 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AE2A4A51BF8458800D7D4D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE2A4BD1BF8458B00D7D4D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AE2A49F1BF8458800D7D4D2 = {
+			isa = PBXGroup;
+			children = (
+				4AE2A4AA1BF8458800D7D4D2 /* Swift_Bloc */,
+				4AE2A4C31BF8458C00D7D4D2 /* Swift_BlocTests */,
+				4AE2A4A91BF8458800D7D4D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AE2A4A91BF8458800D7D4D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AE2A4A81BF8458800D7D4D2 /* Swift_Bloc.app */,
+				4AE2A4C01BF8458B00D7D4D2 /* Swift_BlocTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AE2A4AA1BF8458800D7D4D2 /* Swift_Bloc */ = {
+			isa = PBXGroup;
+			children = (
+				4AE2A4AB1BF8458800D7D4D2 /* AppDelegate.swift */,
+				4AE2A4AF1BF8458B00D7D4D2 /* GameScene.swift */,
+				4AE2A4B11BF8458B00D7D4D2 /* GameViewController.swift */,
+				4A2F1FAA1BF8511500CE2638 /* Swiftris.swift */,
+				4AE2A4FF1BF84C9900D7D4D2 /* Array2D.swift */,
+				4AE2A5011BF84D7900D7D4D2 /* Block.swift */,
+				4AE2A5031BF84E3200D7D4D2 /* Shape.swift */,
+				4A2F1F9C1BF84F8600CE2638 /* SquareShape.swift */,
+				4A2F1F9E1BF84FCF00CE2638 /* TShape.swift */,
+				4A2F1FA01BF84FDA00CE2638 /* LineShape.swift */,
+				4A2F1FA21BF84FE600CE2638 /* SShape.swift */,
+				4A2F1FA41BF84FEF00CE2638 /* ZShape.swift */,
+				4A2F1FA61BF84FF800CE2638 /* LShape.swift */,
+				4A2F1FA81BF8500A00CE2638 /* JShape.swift */,
+				4AE2A4B31BF8458B00D7D4D2 /* Main.storyboard */,
+				4AE2A4B61BF8458B00D7D4D2 /* Assets.xcassets */,
+				4AE2A4DB1BF8494900D7D4D2 /* Sprites.atlas */,
+				4AE2A4D01BF8492B00D7D4D2 /* Sounds */,
+				4AE2A4CF1BF8491600D7D4D2 /* Supportingh Files */,
+			);
+			path = Swift_Bloc;
+			sourceTree = "<group>";
+		};
+		4AE2A4C31BF8458C00D7D4D2 /* Swift_BlocTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AE2A4C41BF8458C00D7D4D2 /* Swift_BlocTests.swift */,
+				4AE2A4C61BF8458C00D7D4D2 /* Info.plist */,
+			);
+			path = Swift_BlocTests;
+			sourceTree = "<group>";
+		};
+		4AE2A4CF1BF8491600D7D4D2 /* Supportingh Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AE2A4DD1BF8498300D7D4D2 /* background.png */,
+				4AE2A4DE1BF8498300D7D4D2 /* background@2x.png */,
+				4AE2A4DF1BF8498300D7D4D2 /* gameboard.png */,
+				4AE2A4E01BF8498300D7D4D2 /* gameboard@2x.png */,
+				4AE2A4E11BF8498300D7D4D2 /* LaunchImage.png */,
+				4AE2A4E21BF8498300D7D4D2 /* LaunchImage@2x.png */,
+				4AE2A4E31BF8498300D7D4D2 /* whitebg.png */,
+				4AE2A4E41BF8498300D7D4D2 /* whitebg@2x.png */,
+				4AE2A4F31BF84A7200D7D4D2 /* icon-29pt.png */,
+				4AE2A4F41BF84A7200D7D4D2 /* icon-40pt.png */,
+				4AE2A4F51BF84A7200D7D4D2 /* icon-60pt.png */,
+				4AE2A4F91BF84B1100D7D4D2 /* icon-29s.png */,
+				4AE2A4FA1BF84B1100D7D4D2 /* icon-40s.png */,
+				4AE2A4FB1BF84B1100D7D4D2 /* icon-60s.png */,
+			);
+			name = "Supportingh Files";
+			sourceTree = "<group>";
+		};
+		4AE2A4D01BF8492B00D7D4D2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4AE2A4D11BF8492B00D7D4D2 /* bomb.mp3 */,
+				4AE2A4D21BF8492B00D7D4D2 /* drop.mp3 */,
+				4AE2A4D31BF8492B00D7D4D2 /* gameover.mp3 */,
+				4AE2A4D41BF8492B00D7D4D2 /* levelup.mp3 */,
+				4AE2A4D51BF8492B00D7D4D2 /* theme.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AE2A4A71BF8458800D7D4D2 /* Swift_Bloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE2A4C91BF8458C00D7D4D2 /* Build configuration list for PBXNativeTarget "Swift_Bloc" */;
+			buildPhases = (
+				4AE2A4A41BF8458800D7D4D2 /* Sources */,
+				4AE2A4A51BF8458800D7D4D2 /* Frameworks */,
+				4AE2A4A61BF8458800D7D4D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swift_Bloc;
+			productName = Swift_Bloc;
+			productReference = 4AE2A4A81BF8458800D7D4D2 /* Swift_Bloc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AE2A4BF1BF8458B00D7D4D2 /* Swift_BlocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE2A4CC1BF8458C00D7D4D2 /* Build configuration list for PBXNativeTarget "Swift_BlocTests" */;
+			buildPhases = (
+				4AE2A4BC1BF8458B00D7D4D2 /* Sources */,
+				4AE2A4BD1BF8458B00D7D4D2 /* Frameworks */,
+				4AE2A4BE1BF8458B00D7D4D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AE2A4C21BF8458B00D7D4D2 /* PBXTargetDependency */,
+			);
+			name = Swift_BlocTests;
+			productName = Swift_BlocTests;
+			productReference = 4AE2A4C01BF8458B00D7D4D2 /* Swift_BlocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AE2A4A01BF8458800D7D4D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Harry Chen";
+				TargetAttributes = {
+					4AE2A4A71BF8458800D7D4D2 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					4AE2A4BF1BF8458B00D7D4D2 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 25KL8N9X8K;
+						TestTargetID = 4AE2A4A71BF8458800D7D4D2;
+					};
+				};
+			};
+			buildConfigurationList = 4AE2A4A31BF8458800D7D4D2 /* Build configuration list for PBXProject "Swift_Bloc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AE2A49F1BF8458800D7D4D2;
+			productRefGroup = 4AE2A4A91BF8458800D7D4D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AE2A4A71BF8458800D7D4D2 /* Swift_Bloc */,
+				4AE2A4BF1BF8458B00D7D4D2 /* Swift_BlocTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AE2A4A61BF8458800D7D4D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE2A4E91BF8498300D7D4D2 /* LaunchImage.png in Resources */,
+				4AE2A4B71BF8458B00D7D4D2 /* Assets.xcassets in Resources */,
+				4AE2A4D81BF8492B00D7D4D2 /* gameover.mp3 in Resources */,
+				4AE2A4DC1BF8494900D7D4D2 /* Sprites.atlas in Resources */,
+				4AE2A4E81BF8498300D7D4D2 /* gameboard@2x.png in Resources */,
+				4AE2A4FD1BF84B1100D7D4D2 /* icon-40s.png in Resources */,
+				4AE2A4EC1BF8498300D7D4D2 /* whitebg@2x.png in Resources */,
+				4AE2A4F61BF84A7200D7D4D2 /* icon-29pt.png in Resources */,
+				4AE2A4F81BF84A7200D7D4D2 /* icon-60pt.png in Resources */,
+				4AE2A4B51BF8458B00D7D4D2 /* Main.storyboard in Resources */,
+				4AE2A4F71BF84A7200D7D4D2 /* icon-40pt.png in Resources */,
+				4AE2A4D61BF8492B00D7D4D2 /* bomb.mp3 in Resources */,
+				4AE2A4EA1BF8498300D7D4D2 /* LaunchImage@2x.png in Resources */,
+				4AE2A4EB1BF8498300D7D4D2 /* whitebg.png in Resources */,
+				4AE2A4D91BF8492B00D7D4D2 /* levelup.mp3 in Resources */,
+				4AE2A4DA1BF8492B00D7D4D2 /* theme.mp3 in Resources */,
+				4AE2A4E51BF8498300D7D4D2 /* background.png in Resources */,
+				4AE2A4E61BF8498300D7D4D2 /* background@2x.png in Resources */,
+				4AE2A4E71BF8498300D7D4D2 /* gameboard.png in Resources */,
+				4AE2A4D71BF8492B00D7D4D2 /* drop.mp3 in Resources */,
+				4AE2A4FE1BF84B1100D7D4D2 /* icon-60s.png in Resources */,
+				4AE2A4FC1BF84B1100D7D4D2 /* icon-29s.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE2A4BE1BF8458B00D7D4D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AE2A4A41BF8458800D7D4D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2F1F9D1BF84F8600CE2638 /* SquareShape.swift in Sources */,
+				4AE2A4B01BF8458B00D7D4D2 /* GameScene.swift in Sources */,
+				4AE2A5041BF84E3200D7D4D2 /* Shape.swift in Sources */,
+				4AE2A5001BF84C9900D7D4D2 /* Array2D.swift in Sources */,
+				4A2F1FAB1BF8511500CE2638 /* Swiftris.swift in Sources */,
+				4A2F1FA11BF84FDA00CE2638 /* LineShape.swift in Sources */,
+				4A2F1FA31BF84FE600CE2638 /* SShape.swift in Sources */,
+				4A2F1F9F1BF84FCF00CE2638 /* TShape.swift in Sources */,
+				4AE2A5021BF84D7900D7D4D2 /* Block.swift in Sources */,
+				4A2F1FA71BF84FF800CE2638 /* LShape.swift in Sources */,
+				4A2F1FA51BF84FEF00CE2638 /* ZShape.swift in Sources */,
+				4AE2A4B21BF8458B00D7D4D2 /* GameViewController.swift in Sources */,
+				4A2F1FA91BF8500A00CE2638 /* JShape.swift in Sources */,
+				4AE2A4AC1BF8458800D7D4D2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE2A4BC1BF8458B00D7D4D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE2A4C51BF8458C00D7D4D2 /* Swift_BlocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AE2A4C21BF8458B00D7D4D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AE2A4A71BF8458800D7D4D2 /* Swift_Bloc */;
+			targetProxy = 4AE2A4C11BF8458B00D7D4D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AE2A4B31BF8458B00D7D4D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE2A4B41BF8458B00D7D4D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AE2A4C71BF8458C00D7D4D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AE2A4C81BF8458C00D7D4D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AE2A4CA1BF8458C00D7D4D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift_BlocTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Harry-Chen.Swift-Bloc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4AE2A4CB1BF8458C00D7D4D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift_BlocTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Harry-Chen.Swift-Bloc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4AE2A4CD1BF8458C00D7D4D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = Swift_BlocTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Harry-Chen.Swift-BlocTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift_Bloc.app/Swift_Bloc";
+			};
+			name = Debug;
+		};
+		4AE2A4CE1BF8458C00D7D4D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Swift_BlocTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Harry-Chen.Swift-BlocTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift_Bloc.app/Swift_Bloc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AE2A4A31BF8458800D7D4D2 /* Build configuration list for PBXProject "Swift_Bloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE2A4C71BF8458C00D7D4D2 /* Debug */,
+				4AE2A4C81BF8458C00D7D4D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE2A4C91BF8458C00D7D4D2 /* Build configuration list for PBXNativeTarget "Swift_Bloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE2A4CA1BF8458C00D7D4D2 /* Debug */,
+				4AE2A4CB1BF8458C00D7D4D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE2A4CC1BF8458C00D7D4D2 /* Build configuration list for PBXNativeTarget "Swift_BlocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE2A4CD1BF8458C00D7D4D2 /* Debug */,
+				4AE2A4CE1BF8458C00D7D4D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AE2A4A01BF8458800D7D4D2 /* Project object */;
+}
