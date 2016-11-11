@@ -20,22 +20,22 @@ let LevelThreshold = 1000
 
 protocol SwiftrisDelegate {
     // Invoked when the current round of Swiftris ends
-    func gameDidEnd(swiftris: Swiftris)
+    func gameDidEnd(_ swiftris: Swiftris)
     
     // Invoked after a new game has begun
-    func gameDidBegin(swiftris: Swiftris)
+    func gameDidBegin(_ swiftris: Swiftris)
     
     // Invoked when the falling shape has become part of the game board
-    func gameShapeDidLand(swiftris: Swiftris)
+    func gameShapeDidLand(_ swiftris: Swiftris)
     
     // Invoked when the falling shape has changed its location
-    func gameShapeDidMove(swiftris: Swiftris)
+    func gameShapeDidMove(_ swiftris: Swiftris)
     
     // Invoked when the falling shape has changed its location after being dropped
-    func gameShapeDidDrop(swiftris: Swiftris)
+    func gameShapeDidDrop(_ swiftris: Swiftris)
     
     // Invoked when the game has reached a new level
-    func gameDidLevelUp(swiftris: Swiftris)
+    func gameDidLevelUp(_ swiftris: Swiftris)
 }
 
 class Swiftris {
@@ -120,7 +120,7 @@ class Swiftris {
     
     func removeCompletedLines() -> (linesRemoved: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>) {
         var removedLines = Array<Array<Block>>()
-        for var row = NumRows - 1; row > 0; row-- {
+        for row in ((0 + 1)...NumRows - 1).reversed() {
             var rowOfBlocks = Array<Block>()
             for column in 0..<NumColumns {
                 guard let block = blockArray[column, row] else {
@@ -149,13 +149,13 @@ class Swiftris {
         var fallenBlocks = Array<Array<Block>>()
         for column in 0..<NumColumns {
             var fallenBlocksArray = Array<Block>()
-            for var row = removedLines[0][0].row - 1; row > 0; row-- {
+            for row in ((0 + 1)...removedLines[0][0].row - 1).reversed() {
                 guard let block = blockArray[column, row] else {
                     continue
                 }
                 var newRow = row
                 while (newRow < NumRows - 1 && blockArray[column, newRow + 1] == nil) {
-                    newRow++
+                    newRow += 1
                 }
                 block.row = newRow
                 blockArray[column, row] = nil
